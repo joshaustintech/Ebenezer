@@ -1,0 +1,38 @@
+warning: 'English' is not available in Spinel; the require is ignored and code using it will fail
+spinel: liquid-5.14.0/lib/liquid/standardfilters.rb:470: unsupported Array#reject on a value typed as Array, a call no route of the compiler took (CRuby calls the method; this would raise NoMethodError): node 10670 (CallNode `reject`) recv=CallNode/ty22 argc=0
+spinel: liquid-5.14.0/lib/liquid/tags/table_row.rb:83: unsupported expression: node 13074 (ReturnNode)
+spinel: liquid-5.14.0/lib/liquid/tags/for.rb:122: a String is passed through a proc or Method read out of a slot that holds other values, and a proc or Method it can reach appends to the String it is handed: this call hands it a copy, so the append would not reach the caller's String (a String is not yet shared by reference from an instance variable). Return the String from the proc or Method and assign it, or append to it in the caller.
+spinel: liquid-5.14.0/lib/liquid/tags/include.rb:85: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/tags/include.rb:135: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/environment.rb:128: Class.new with a non-constant superclass is not supported; use a constant superclass (see docs/limitations.md)
+spinel: liquid-5.14.0/lib/liquid/lexer.rb:123: unsupported call operator write (unsupported receiver/attr): node 17829 (CallOperatorWriteNode)
+spinel: packages/psych/psych.rb:157: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: packages/psych/psych.rb:1418: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: packages/psych/psych.rb:1470: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: packages/psych/psych.rb:1494: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: packages/psych/psych.rb:1529: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/strainer_template.rb:18: unsupported call: node 49424 (CallNode `include?`) recv=SelfNode/ty49 argc=1 arg0ty50
+spinel: liquid-5.14.0/lib/liquid/strainer_template.rb:40: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/context.rb:149: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/context.rb:196: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/context.rb:207: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/block_body.rb:114: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/document.rb:55: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/template.rb:190: unsupported call-or-write (non-object): node 53539 (CallOrWriteNode)
+spinel: liquid-5.14.0/lib/liquid/utils.rb:173: unsupported call: node 54963 (CallNode `instance_method`) recv=CallNode/ty49 argc=1 arg0ty8
+spinel: liquid-5.14.0/lib/liquid/utils.rb:191: unsupported call: node 55004 (CallNode `instance_method`) recv=CallNode/ty49 argc=1 arg0ty8
+spinel: liquid-5.14.0/lib/liquid/tag/disableable.rb:16: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: unsupported Hash#compare_by_identity (identity-keyed hashing): node 68111 (CallNode `compare_by_identity`) recv=CallNode/ty50 argc=0
+spinel: packages/set/set.rb:229: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/tags/include.rb:85: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/block_body.rb:28: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid/block_body.rb:136: a method that uses its block (yield or block.call) and calls itself recursively (inlining cannot terminate; no standalone function to fall back to)
+spinel: liquid-5.14.0/lib/liquid.rb:49: unsupported call: node 5006 (CallNode `instance_methods`) recv=ConstantReadNode/ty49 argc=0
+spinel: 33 refusals, nothing written
+real 15.29
+user 15.07
+sys 0.14
