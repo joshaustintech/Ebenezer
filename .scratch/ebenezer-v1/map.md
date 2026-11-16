@@ -12,6 +12,7 @@ A build-ready **v1 spec** for Ebenezer: a Jekyll-inspired, simplified static sit
 - The shipped artifact is a Spinel-compiled binary. Running on CRuby is nice to have for development, not a requirement.
 - Borrow Jekyll's conventions (front matter, `_layouts/`, `_posts/`, `_config.yml`, …) but promise no Jekyll compatibility.
 - v1 targets any kind of site: blogs, small sites, docs portals, sites with multiple collections.
+- ADRs live in `docs/adr/` (0001–0004 cover Liquid, CommonMark, Pagefind and built-ins).
 - Skills for every session: `grilling` + `domain-modeling` for grilling tickets; `research` for research tickets. Keep `GLOSSARY.md` current as content-model terms settle.
 - Tracker: local markdown (`.scratch/ebenezer-v1/`). Ask one grilling question at a time.
 
@@ -23,6 +24,8 @@ A build-ready **v1 spec** for Ebenezer: a Jekyll-inspired, simplified static sit
 - [Spinel-compatible Markdown, YAML and templating libraries](issues/02-spinel-compatible-libraries.md): YAML via bundled psych (dates must be strings); Markdown via motion-markdown-it, a forked kramdown, or spinel-commonmarker (C); no templating engine works unmodified, so fork Liquid or write our own.
 - [Templating language](issues/05-templating-language.md): fork Shopify/liquid for Spinel.
 - [Markdown engine](issues/09-markdown-engine.md): in-house engine, 1:1 compliant with CommonMark.
+- [Built-in components](issues/11-built-in-components.md): the Liquid fork, CommonMark engine and Pagefind port are bundled into Ebenezer as built-ins, not separate packages.
+- [Site search](issues/12-site-search.md): fork Pagefind into Spinel Ruby as a built-in.
 
 ## Not yet specified
 
