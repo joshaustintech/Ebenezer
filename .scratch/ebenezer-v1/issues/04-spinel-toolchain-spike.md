@@ -11,3 +11,4 @@ AFK. Install Spinel and compile a toy program that reads a file, splits YAML-ish
 Also:
 - Compile bundled psych on front matter that contains dates, and diff its output against CRuby.
 - Try compiling unmodified Shopify/liquid (latest 5.x) and list every construct Spinel rejects. This feeds [Liquid fork scope](08-liquid-fork-scope.md).
+- Check whether Spinel bundles `csv` (data files support CSV in v1). If it doesn't, note how much an in-house parser would take.

@@ -28,10 +28,11 @@ A build-ready **v1 spec** for Ebenezer: a Jekyll-inspired, simplified static sit
 - [Site search](issues/12-site-search.md): fork Pagefind into Spinel Ruby as a built-in.
 - [Pagefind browser runtime](issues/15-pagefind-browser-runtime.md): Pagefind's browser side (search core, API, UI) is forked into Elm.
 - [Pagefind architecture](issues/13-pagefind-architecture.md): MIT (+BSD-3 Snowball); index is undocumented gzip+CBOR that changes per release; Elm must reimplement ~4.5k lines of WASM core + JS; Spinel wasm can't stand in; matching stemmers on both sides is the key contract.
+- [v1 content model](issues/03-v1-content-model.md): Collections are the core unit (posts = built-in Dated Collection; Unrouted Collections opt out of URLs); front matter makes Pages, the rest are Static Files; `_drafts/` mirrors the site; pretty pattern-only URLs; built-in Taxonomies, pagination, Atom+RSS feeds and sitemap; Liquid→CommonMark→Layouts; one language per site.
 
 ## Not yet specified
 
-- **Config schema**: what goes in `_config.yml`, defaults, and how it overrides per collection or directory.
+- **Config schema**: the content model fixed many keys (`collections`, `dated`, `routed`/`headless`, `order`, `sort_by`, `permalink`, `taxonomies`, `paginate`, `defaults`, `feed`, `lang`, `exclude`/`include`). What's left is the full key list, validation and errors, and whether environment-specific config exists.
 - **Module architecture**: how the reader, renderer and writer pipeline is split into modules, given Spinel's constraints.
 - **Asset handling**: Sass/CSS processing, fingerprinting, or plain copy-through.
 - **Incremental builds and performance targets**: what "fast" means, measured how.
@@ -44,3 +45,4 @@ A build-ready **v1 spec** for Ebenezer: a Jekyll-inspired, simplified static sit
 - Plugin system: ruled out for v1 by the user.
 - Jekyll compatibility: Ebenezer borrows conventions only; existing Jekyll sites are not promised to build.
 - Building v1 itself: the map ends at the spec.
+- Multilingual content (translations, language-prefixed URLs, per-language search): v1 sites have one language, set by `lang:`. This is a later effort; see [v1 content model](issues/03-v1-content-model.md).
