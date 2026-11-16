@@ -19,13 +19,15 @@ A build-ready **v1 spec** for Ebenezer: a Jekyll-inspired, simplified static sit
 
 <!-- one line per resolved ticket: [title](issues/NN-slug.md): gist -->
 
+- [What does Spinel support?](issues/01-what-spinel-supports.md): AOT to C, libc-only binary; no eval/method_missing/RubyGems; ERB unusable, so we need our own template language; bundled Psych chokes on unquoted dates; sockets and threads OK; Linux/macOS/wasm.
+
 ## Not yet specified
 
 - **Config schema**: what goes in `_config.yml`, defaults, and how it overrides per collection or directory.
 - **Module architecture**: how the reader, renderer and writer pipeline is split into modules, given Spinel's constraints.
 - **Asset handling**: Sass/CSS processing, fingerprinting, or plain copy-through.
 - **Incremental builds and performance targets**: what "fast" means, measured how.
-- **Error reporting**: diagnostics for bad front matter and template errors.
+- **Error reporting**: diagnostics for bad front matter and template errors. Release Spinel builds have no backtraces, so Ebenezer must track its own source locations.
 - **Testing strategy**: how to test code that has to compile under Spinel.
 - **Distribution and packaging**: how the binary is built and shipped per platform.
 
