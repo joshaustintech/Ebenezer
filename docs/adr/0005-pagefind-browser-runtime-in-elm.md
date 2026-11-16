@@ -5,7 +5,7 @@ Pagefind's browser side, meaning its WASM search core, `pagefind.js` API and def
 ## Considered Options
 
 - **Bundle Pagefind's browser assets unchanged.** Least work, but it ties Ebenezer to upstream's index format and Rust build.
-- **Compile the search core with Spinel's wasm32-wasi target.** Keeps it in Ruby, but needs a WASI shim in the browser and is unproven.
+- **Compile the search core with Spinel's wasm32-wasi target.** Ruled out: Spinel builds standalone WASI programs, not libraries JavaScript can call (see the Pagefind architecture research).
 
 ## Consequences
 

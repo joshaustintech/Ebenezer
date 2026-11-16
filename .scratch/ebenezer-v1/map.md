@@ -27,6 +27,7 @@ A build-ready **v1 spec** for Ebenezer: a Jekyll-inspired, simplified static sit
 - [Built-in components](issues/11-built-in-components.md): the Liquid fork, CommonMark engine and Pagefind port are bundled into Ebenezer as built-ins, not separate packages.
 - [Site search](issues/12-site-search.md): fork Pagefind into Spinel Ruby as a built-in.
 - [Pagefind browser runtime](issues/15-pagefind-browser-runtime.md): Pagefind's browser side (search core, API, UI) is forked into Elm.
+- [Pagefind architecture](issues/13-pagefind-architecture.md): MIT (+BSD-3 Snowball); index is undocumented gzip+CBOR that changes per release; Elm must reimplement ~4.5k lines of WASM core + JS; Spinel wasm can't stand in; matching stemmers on both sides is the key contract.
 
 ## Not yet specified
 
