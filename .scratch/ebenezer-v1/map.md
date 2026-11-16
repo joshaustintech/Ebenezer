@@ -20,6 +20,7 @@ A build-ready **v1 spec** for Ebenezer: a Jekyll-inspired, simplified static sit
 <!-- one line per resolved ticket: [title](issues/NN-slug.md): gist -->
 
 - [What does Spinel support?](issues/01-what-spinel-supports.md): AOT to C, libc-only binary; no eval/method_missing/RubyGems; ERB unusable, so we need our own template language; bundled Psych chokes on unquoted dates; sockets and threads OK; Linux/macOS/wasm.
+- [Spinel-compatible Markdown, YAML and templating libraries](issues/02-spinel-compatible-libraries.md): YAML via bundled psych (dates must be strings); Markdown via motion-markdown-it, a forked kramdown, or spinel-commonmarker (C); no templating engine works unmodified, so fork Liquid or write our own.
 
 ## Not yet specified
 
